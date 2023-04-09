@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Logo_Icon/IE_1.ico" />
+     <!-- css propio   -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- cargamos el css de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contáctenos</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-info-subtle fixed-top opacity-75">
+  <div class="container-fluid">
+      <img src="./Logo_Icon/IE_1.ico " title="Iluminaciones Especiales" width="35" alt="logotipo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" target="">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index_Sobre_Nosotros.html" target="">Sobre Nosotros</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index_Nuestros_Clientes.html" target="">Nuestros Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index_Contactenos.html" target="">Contáctenos</a>
+                </li>
+              </ul>
+          <div class="ms-sm-5 d-flex column-gap-3">
+                <a href="https://www.whatsapp.com/?lang=es" target="" title="whatsapp" class="text-success"><i class="fa-brands fa-square-whatsapp fa-lg "></i></a>
+                <a href="https://www.instagram.com/" target="" title="instagram" class="text-danger"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://es-la.facebook.com/pages/create/?ref_type=registration_form" target="" title="facebook" class=""><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+                <a href="https://twitter.com/?lang=es" target=""  title="twitter" class=""><i class="fa-brands fa-square-twitter fa-lg"></i></a>
+                <a href="https://ar.pinterest.com/#top" target="" title="pinterest" class="text-danger"><i class="fa-brands fa-square-pinterest fa-lg"></i></a>
+          </div>
+      </div>
+  </div>
+</nav>
+<!--FORMULARIO MULTI STEP-->
+<div class="container">
+  <h2 class="mt-5 display-2"></h2>
+  <section id="multistep" class="row">
+    <div class="col-sm-10 col-md-8 col-lg-6 ">
+<!--STEP 1-->
+<form id="step1" class="mt-2" >
+  <fieldset>
+    <legend class="mb-1 text-center">1/3 ¿Quién se Contacta?</legend>
+    <legend class="mb-3 start-0">Complete según corresponda y en orden indicado:</legend>
+    <div class="mb-4">
+      <label for="fullName">Nombre/s-Apellido/s</label>
+      <input type="text"  id="fullName" class="form-control">
+      </div>
+        <div class="mb-4">
+      <label for="location">Domicilio: Pais/Pcia./Cdad./Loc./B°/Calle/N°/Piso/Dpto/N°/Letra</label>
+      <input type="text"  id="location" class="form-control"  required >
+    </div>
+    <div class="mb-4">
+      <label for="phone">Número Telefónico con código de area: Celular/Fijo</label>
+      <input type="tel" required id="phone" class="form-control" >
+    </div>
+</fieldset>
+<div>
+  <button  type="button" id="btn-next-form1" class="btn-form  btn btn-outline-dark" >Siguiente</button>
+</div>
+</form>
+<!--STEP 2-->
+<form id="step2" class="d-none mt-2">
+  <fieldset>
+    <legend class="mb-5 text-center">2/3 Otros Datos </legend>
+    <div class="mb-5">
+      <label for="email">Correo Electrónico</label>
+      <input type="email" required id="email" class="form-control" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-5">
+      <label for="cvFile" class="form-label">Subir CV</label>
+      <input type="file" required id="cvFile" class="form-control">
+    </div>
+    <div class="mb-5">
+      <label for="extraInfo" class="form-label">Información Adicional</label>
+      <textarea id="extraInfo" class="form-control" cols="30" rows="1" placeholder="Incluya cualquier información que considere necesario... "></textarea>
+    </div>
+  </fieldset>
+  <div>
+    <button  type="button" id="btn-prev-form2" class="btn-form btn btn-outline-dark ">Anterior</button>
+    <button  type="button" id="btn-next-form2" class="btn-form btn btn-outline-dark">Siguiente</button>
+  </div>
+</form>
+<!--STEP 3-->
+<form id="step3" class="d-none mt-2 ">
+<fieldset>
+    <legend class="mb-3 text-center">3/3 Última Información</legend>
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Empresa/Comercio</label>
+      <input type="text" required id="fullName" class="form-control" aria-describedby="fullNameHelp"  placeholder="Nombre...">
+      <div id="fullNameHelp"  class="form-text">Indique Nombre y Tipo</div>
+    </div>
+    <div class="mb-3">
+      <label for="disclaimer" class="form-label">Confidencialidad</label>
+      <textarea type="text" id="disclaimer" class="form-control" disabled cols="30" rows="5">
+      ACUERDO DE CONFIDENCIALIDAD Entre representado en este acto por el Sr/Sra ……………………………… DNI ………………………………, en su carácter de ………………………………………………………………………………………, con domicilio legal en la calle , quienes reconocen recíprocamente el carácter en que intervienen y la plena capacidad para contratar y obligar a sus representadas, acuerdan celebrar el presente Acuerdo en el cual cada una de las partes se denominará en adelante individual e indistintamente la “Parte” y colectivamente las “Partes”, sujeto a las siguientes cláusulas y condiciones: PRELIMINAR: Las Partes intercambiarán entre sí determinada información de carácter confidencial, por consiguiente resulta necesario para las mismas proteger y mantener estricta confidencialidad sobre dicha información que es propia y confidencial de cada una y que la misma no sea difundida ni divulgada a ninguna persona no suscriptora del presente Acuerdo. En consecuencia, las Partes convienen celebrar el presente Acuerdo sujeto a las siguientes cláusulas y condiciones: PRIMERA. Partes: La Parte que recibe información de la otra es denominada “Parte Receptora” y la Parte que hace saber su información es denominada “Parte Reveladora”. SEGUNDA. Definición del término Información Confidencial: La Parte Receptora se obliga a proteger como confidencial y no divulgar a tercero alguno ninguna Información Confidencial recibida de la Parte Reveladora. A estos efectos, “Información Confidencial” significa información que no es de público conocimiento y que es usada, desarrollada u obtenida por la Parte Reveladora y/o sus sociedades relacionadas, incluyendo pero sin limitarse a: (i) informaciones, procedimientos y datos obtenidos y/o desarrollados por la Parte Reveladora incluyendo aquellos obtenidos con anterioridad a la fecha de este Acuerdo, (ii) productos o servicios, (iii) costos y estructuras de precios, (iv) análisis, (v) métodos de negocios y de contabilidad (vi) software de computación, incluyendo sistemas operativos, solicitudes y listados de programación, (vii) organigramas, manuales y documentación, (viii) todos los métodos de producción, procesos, tecnología y secretos comerciales, y (ix) toda otra información similar y relacionada, en cualquier forma. TERCERA. Exclusiones del término Información Confidencial: El término Información Confidencial para los fines de este Acuerdo, no incluye los datos o la información que: (a) ya fuere conocida por alguna de las Partes al momento en que dicha información le fuere revelada, o (b) antes de ser revelada por alguna de las Partes (i) hubiere sido conocida por el público en general sin que esto se deba al accionar indebido de las Partes o de alguna de las Partes o sus Representantes; (ii) hubiere sido recibida por alguna de las Partes de un tercero sin obligación de confidencialidad; (iii) fuere motivo de una autorización por escrito que permita la divulgación de la misma; o (c) hubiere sido independientemente generada por alguna de las Partes sin la utilización directa o indirecta de la Información Confidencial recibida de la otra Parte. CUARTA. Obligación de Confidencialidad: Cada Parte deberá mantener la confidencialidad de la Información catalogada como Confidencial y no podrá divulgar en todo o en parte a persona alguna, salvo a los Representantes que necesiten tener conocimiento de dicha Información en razón de las tareas a su cargo relacionadas con el Servicio, a no ser que cuente con previa autorización por escrito de la otra Parte. Las Partes deberán informar a los Representantes que reciban Información Confidencial sobre la naturaleza confidencial de esa información recibida y requerirles que se sometan por escrito a lo estipulado en este Acuerdo. La Información Confidencial recibida por las Partes será utilizada solamente para los fines del Servicio o para su evaluación en relación al mismo. La Parte que recibiera dicha Información Confidencial no podrá utilizarla para su propio beneficio ni en detrimento de los intereses de la otra Parte. Para los fines de este Acuerdo, cualquier Información Confidencial que una de las Partes revelara a la otra a través de un tercero, estará sujeta a los mismos deberes de confidencialidad, conforme lo estipulado en el presente, como si la Información Confidencial hubiera sido revelada directamente por alguna de las Partes, siempre que el tercero que revele dicha información la identifique expresamente como “confidencial” (mediante el uso de la palabra “confidencial” en cada uno de los documentos) y certifique por escrito que reconoce y presta conformidad con los términos y condiciones de este Acuerdo. Toda Información Confidencial que con motivo del Servicio sea divulgada por alguna de las Partes a la otra Parte, sus funcionarios, Representantes o entes vinculados, estará sujeta a las mismas condiciones de confidencialidad que las Partes otorgan a la Información Confidencial en los términos del presente Acuerdo. QUINTA. Standard para la protección: A los efectos de cumplir con las obligaciones establecidas ut supra, cada Parte realizará los mismos esfuerzos que realiza para proteger su propia información confidencial, los cuales no serán de un nivel inferior a la clase de esfuerzos que se realizarían para un negocio razonable en relación con la protección de su propia información altamente confidencial y al secreto comercial. SEXTA. Requerimientos Judiciales: En caso de que un órgano administrativo o judicial competente requiera a alguna de las Partes la divulgación de toda o parte de la Información Confidencial, la Parte requerida deberá notificar previa e inmediatamente a la otra Parte de tal requerimiento, de manera tal que esta última pueda gestionar un recurso legal protectorio de sus intereses. El acatamiento de dicho requerimiento, previa notificación a la otra Parte, no constituirá un incumplimiento de la obligación de confidencialidad prevista en el presente Acuerdo. SEPTIMA. Propiedad y Devolución: Toda la Información Confidencial (incluyendo las copias tangibles y la almacenada por medios electrónicos y/o cualquier otro medio) será en todo momento propiedad de la Parte que la genere. Dentro de los 10 (diez) días de recibido un requerimiento por escrito, la Parte requerida entregará a la Parte requirente todos los materiales tangibles conteniendo o representando la Información Confidencial recibida, acompañando dicha entrega con una nota emitida por un funcionario de la empresa que certifique: (i) la entrega de la totalidad de materiales que estuviesen en manos o bajo el control de la Parte que efectuara la devolución de dicha Información Confidencial, o (ii) la destrucción de toda la Información Confidencial propiedad de la otra Parte. Ninguna de las Partes hará valer directa o indirectamente ningún derecho con relación a la Información Confidencial que pudiera resultar contrario a los intereses de la Parte propietaria de dicha Información Confidencial. OCTAVA. Ley Aplicable: Este Acuerdo se regirá en cuanto a su interpretación, aplicación, ejecución, validez y/o resolución por las leyes de la República Argentina. NOVENA. Jurisdicción: Las Partes se someten de modo irrevocable a la jurisdicción de los Juzgados Federales Civiles y Comerciales de la Ciudad Autónoma de Buenos Aires. DÉCIMA. Aplicación del Acuerdo a Personas Asociadas: Toda la información divulgada con motivo del Servicio a cada una de las Partes por parte de cualquier persona (física o jurídica) controlada, controlante, afiliada o de cualquier otra persona o entidad que se halle participando con alguna de ellas, en una relación de negocios en conexión con el Servicio, se considerará como Información Confidencial de acuerdo a lo estipulado en este Acuerdo, y los derechos aquí otorgados a las Partes podrán ser ejercidos por ellas o por la afiliada o entidad que haya divulgado la Información Confidencial, tal como si la afiliada o entidad fuera parte de este Acuerdo. DÉCIMA PRIMERA. Alcance: Ni este Acuerdo ni la divulgación de Información Confidencial constituirán o implicarán cualquier promesa o intención para realizar compras o ventas en relación con el Servicio. La Información Confidencial revelada por las Partes no constituye representación, garantía, compromiso ni entrega en posesión o licencia o cualquier otro derecho de ningún tipo por la Parte Reveladora a la Parte Receptora, en especial con relación a la precisión y completitud de cualquier Información Confidencial o la no infracción de los derechos de marcas y patentes y cualquier otro derecho de propiedad intelectual y otros derechos de terceros. Las Partes dejan expresamente establecido que el intercambio de la Información Confidencial se realiza con el único fin de cumplir con el Servicio. En ese sentido, las Partes declaran expresamente que no podrán utilizar dicha Información Confidencial para otros fines distintos al aquí establecido, y que la utilización de la misma en contravención a cualquiera de las cláusulas pactadas en el presente Acuerdo hará responsable a la Parte incumplidora de los daños y perjuicios directos e indirectos que se deriven del incumplimiento. Se entiende que este Acuerdo no puede ser considerado como promesa, compromiso u obligación de celebrar contrato alguno entre las Partes y por ende, no obliga a ninguna de las Partes a suscribir ni a prestar su consentimiento para acuerdos ulteriores o a continuar con cualquier otra relación posible u otros negocios. La firma de este Acuerdo no implica ni debe interpretarse de ningún modo como causa de otras obligaciones distintas de las asumidas a través del presente, por lo cual no dará lugar a reclamos de ningún tipo, sea basado en responsabilidad precontractual, lucro cesante o de otro tipo, por lo que ambas Partes renuncian expresamente a accionar por tales conceptos. DÉCIMA SEGUNDA. Comienzo, Duración y Terminación del Acuerdo: Tendrá vigencia a partir de la fecha de la suscripción por las Partes. Sus previsiones serán aplicables retroactivamente a cualquier Información Confidencial que hubiere sido revelada con anterioridad a la fecha de suscripción del mismo en el curso de las conversaciones y negociaciones mantenidas por las Partes. Cada Parte podrá cesar de brindar Información Confidencial a la otra Parte en cualquier momento previa notificación por escrito con especial referencia a este Acuerdo. No obstante ello, la obligación de cada Parte de mantener la confidencialidad de la Información Confidencial que haya recibido bajo este Acuerdo se mantendrá en vigencia durante el tiempo que dure el Servicio y hasta un período de 3 (tres) años con posterioridad al momento que haya cesado de dar la Información Confidencial. Esta obligación de confidencialidad de las Partes y de sus Representantes continuará indefinidamente en lo que se refiere a Información Confidencial que constituya secreto comercial bajo la ley aplicable hasta que dicha Información Confidencial cese de ostentar tal calidad. DÉCIMA TERCERA. Renuncia de Derechos: Bajo ninguna circunstancia la omisión o el retardo por alguna de las Partes en el ejercicio de un derecho se entenderán como una renuncia a dicho derecho. Asimismo, el ejercicio singular o parcial de un derecho, no impedirá el ejercicio total del mismo o de cualquier otro derecho implícita o explícitamente otorgado a las Partes bajo este Acuerdo. DÉCIMA CUARTA. Modificación del Acuerdo: Este Acuerdo no podrá ser enmendado o modificado oralmente, sino sólo por escrito con la firma de las Partes. DÉCIMA QUINTA. Notificaciones: Todas las notificaciones entre las Partes en relación con este Acuerdo serán realizadas por medio fehaciente a los domicilios indicados en el encabezamiento del presente. En prueba de conformidad se suscriben dos ejemplares de idéntico tenor y efecto, en la Ciudad de Mendiolaza a los….días del mes de… del año…….
+      </textarea>
+    </div>
+
+    <div class="mt-5">
+      <input type="checkbox" id="check" class="form-check-input">
+      <label for="check" class="form-check-label">Acepto Condiciones</label>
+    </div>
+</fieldset>
+      <div>
+        <button  type="button" id="btn-prev-form3"   class="btn-form btn btn-outline-dark ">Anterior</button>
+        <button  type="submit" id="btn-submit-form3" class="btn-form btn btn-outline-dark" disabled data-bs-toggle="modal" data-bs-target="#form-modal">Enviar</button>
+      </div>
+    </form>
+    </div>
+  </section>
+</div>
+    <!-- Modal del Formulario-->
+  <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade  " id="form-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>-->
+        <button   type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        Su Formulario ha sido enviado correctamente y será procesado, dando una respuesta en 24 horas.
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- carga del JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+
+<!-- carga del kit de FontAwesome -->
+<script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
+<!-- Carga de nuestro JavaScript-->
+<script src="./js/index.js"></script>
+<footer>
+<div class="container">
+      <div class="text-center bg-info-subtle fixed-bottom opacity-75 ">
+        <a href="Flag_Icons/Argentina.ico"><img src="./Flag_Icons/Argentina.ico " title="Argentina" width="30" alt="Bandera Argentina"></a>
+        <a href="Flag_Icons/Rusia.ico"><img src="./Flag_Icons/Rusia.ico" title="Rusia" width="30" alt="Bandera Rusa"></a>
+        <a href="Flag_Icons/China.ico"><img src="./Flag_Icons/China.ico" title="China" width="30" alt="Bandera China"></a>
+        <a href="Flag_Icons/USA.ico"><img src="./Flag_Icons/USA.ico" title="EEUU" width="30" alt="Bandera EEUU"></a>
+        <a href="Flag_Icons/Brazil.ico"><img src="./Flag_Icons/Brazil.ico" title="Brazil" width="35" alt="Bandera Brazil"></a>
+      </div>
+      </div>
+</footer>
+</body>
+</html>
